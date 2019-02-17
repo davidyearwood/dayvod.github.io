@@ -437,7 +437,16 @@ ul.primary-nav__list {
   list-style-type: none;
   padding-left: 0;
 }
+
 .primary-nav__list-item {
   display: inline-block;
   margin-right: -david-type-scale-down($base, $scale, 1);
+}
+
+// Site title
+.site-title__sub {
+  display: block;
+  font-size: -david-type-scale-down($base, $scale, 5);
+  font-weight: 400;
+  font-family: 'IBM Plex Mono', monospace;
 }

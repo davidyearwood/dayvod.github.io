@@ -353,4 +353,10 @@ ul.primary-nav__list {
   display: inline-block;
   margin-right: 0.8em; }
 
+.site-title__sub {
+  display: block;
+  font-size: 0.32768em;
+  font-weight: 400;
+  font-family: 'IBM Plex Mono', monospace; }
+
 /*# sourceMappingURL=main.css.map */
