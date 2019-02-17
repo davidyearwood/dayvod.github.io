@@ -1,53 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:800|IBM+Plex+Mono:400');
 
-html {font-size: 18px;}
-
-body {
-  background-color: white;
-  font-family: 'IBM Plex Mono', monospace;
-  font-weight: 400;
-  line-height: 1.45;
-  color: #333;
-}
-
-p {margin-bottom: 1.25em;}
-
-h1, h2, h3, h4, h5 {
-  margin: 2.75rem 0 1rem;
-  font-family: 'Dosis', sans-serif;
-  font-weight: 800;
-  line-height: 1.15;
-}
-
-h1 {
-  margin-top: 0;
-  font-size: 3.052em;
-}
-
-h2 {
-  font-size: 2.441em;
-}
-
-h3 {
-  font-size: 1.953em;
-  
-}
-
-h4 {
-  font-size: 1.563em;
-  
-}
-
-h5 {
-  font-size: 1.25em;
-  
-}
-
-small, .text_small {
-  font-size: 0.8em;
-  
-}
-
 // $map: (key1: value1, key2: value2, key3: value3);
 @function -david-type-scale-up($base, $scale, $level) {
     @for $currentLevel from $level through 1  {
@@ -62,3 +14,67 @@ small, .text_small {
     }
   @return $base; 
 }
+
+$scale: 1.250;
+$base: 1em;
+
+$h1: -david-type-scale-up($base, $scale, 5);
+$h2: -david-type-scale-up($base, $scale, 4);
+$h3: -david-type-scale-up($base, $scale, 3);
+$h4: -david-type-scale-up($base, $scale, 2);
+$h5: -david-type-scale-up($base, $scale, 1);
+
+html {font-size: 18px;}
+
+body {
+  background-color: white;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #333;
+}
+
+p {
+  margin-bottom: 1.25em;
+  
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5 {
+  margin: 2.75rem 0 1rem;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+  
+}
+
+h4 {
+  font-size: $h4;
+  
+}
+
+h5 {
+  font-size: $h5;
+  
+}
+
+small, .text_small {
+  font-size: -david-type-scale-down($base, $scale, 1);
+  
+}
+

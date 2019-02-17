@@ -12,24 +12,27 @@ body {
 p {
   margin-bottom: 1.25em; }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 2.75rem 0 1rem;
   font-family: 'Dosis', sans-serif;
   font-weight: 800;
   line-height: 1.15; }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052em; }
+  font-size: 3.05176em; }
 
 h2 {
-  font-size: 2.441em; }
+  font-size: 2.44141em; }
 
 h3 {
-  font-size: 1.953em; }
+  font-size: 1.95313em; }
 
 h4 {
-  font-size: 1.563em; }
+  font-size: 1.5625em; }
 
 h5 {
   font-size: 1.25em; }
