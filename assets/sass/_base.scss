@@ -475,11 +475,12 @@ ul.primary-nav__list {
   background-color: #EFEFEF;
   padding: 1rem;
   box-sizing: border-box;
+  margin-bottom: -david-type-scale-up($base, $scale, 1);
 }
 
 .card__title {
   margin: 0;
-  font-size: -david-type-scale-up($base, $scale, 3);
+  font-size: -david-type-scale-up($base, $scale, 2);
   font-weight: 400;
 }
 
@@ -497,5 +498,12 @@ ul.icons {
 li.icons__item {
     width: 15%;
     margin-right: -david-type-scale-up($base, $scale, 1);
-    max-width: 100px;
+    max-width: 75px;
+}
+
+// Main Section
+main {
+  @extend %container;
+  display: flex;
+  flex-direction: column;
 }
