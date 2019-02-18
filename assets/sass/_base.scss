@@ -473,11 +473,26 @@ ul.primary-nav__list {
 }
 
 // card
+.card--link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card--link:hover > .card{
+  background-color: #facd23;
+}
+
+.card--link.bg-red:hover > .card {
+  background-color: #f89b89;
+}
 .card {
+  display: block;
+  text-decoration: none;
   background-color: #EFEFEF;
   padding: 1rem;
   box-sizing: border-box;
   margin-bottom: -david-type-scale-up($base, $scale, 1);
+  transition: all 0.25s;
 }
 
 .card__title {
