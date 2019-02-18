@@ -362,11 +362,12 @@ ul.primary-nav__list {
   font-family: 'IBM Plex Mono', monospace; }
 
 .master-header, main {
-  max-width: 600px;
+  max-width: 750px;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem; }
+  padding: 1rem;
+  box-sizing: border-box; }
 
 .master-header {
   text-align: center; }
@@ -399,5 +400,22 @@ li.icons__item {
 main {
   display: flex;
   flex-direction: column; }
+
+.two-three-col,
+.one-three-col {
+  width: 100%; }
+
+@media (min-width: 750px) {
+  main {
+    flex-direction: row; }
+
+  .card {
+    margin-right: 1.25em; }
+
+  .two-three-col {
+    width: 65%; }
+
+  .one-three-col {
+    width: 30%; } }
 
 /*# sourceMappingURL=main.css.map */

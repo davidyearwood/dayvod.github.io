@@ -370,6 +370,7 @@ template {
 
 $scale: 1.250;
 $base: 1em;
+$container-width: 750px;
 
 $h1: -david-type-scale-up($base, $scale, 5);
 $h2: -david-type-scale-up($base, $scale, 4);
@@ -457,11 +458,12 @@ ul.primary-nav__list {
 
 // container
 %container {
-  max-width: 600px;
+  max-width: $container-width;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 // Master Header
@@ -506,4 +508,30 @@ main {
   @extend %container;
   display: flex;
   flex-direction: column;
+}
+
+
+.two-three-col,
+.one-three-col {
+  width: 100%;
+}
+
+
+@media (min-width: $container-width) {
+  main {
+    flex-direction: row;
+  }
+  
+  .card {
+    margin-right: -david-type-scale-up($base, $scale, 1);
+  }
+  
+  
+  .two-three-col {
+    width: 65%;
+  }
+  
+  .one-three-col {
+    width: 30%;
+  }
 }
