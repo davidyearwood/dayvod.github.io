@@ -317,11 +317,7 @@ body {
 p {
   margin-bottom: 1.25em; }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1 {
   margin: 2.75rem 0 1rem;
   font-family: 'Dosis', sans-serif;
   font-weight: 800;
@@ -329,6 +325,12 @@ h5 {
 
 h1 {
   font-size: 3.05176em; }
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'IBM Plex Mono', monospace; }
 
 h2 {
   font-size: 2.44141em; }
@@ -368,5 +370,29 @@ ul.primary-nav__list {
 
 .master-header {
   text-align: center; }
+
+.card {
+  background-color: #EFEFEF;
+  padding: 1rem;
+  box-sizing: border-box; }
+
+.card__title {
+  margin: 0;
+  font-size: 1.95313em;
+  font-weight: 400; }
+
+ul.icons {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1.5625em; }
+
+li.icons__item {
+  width: 15%;
+  margin-right: 1.25em;
+  max-width: 100px; }
 
 /*# sourceMappingURL=main.css.map */

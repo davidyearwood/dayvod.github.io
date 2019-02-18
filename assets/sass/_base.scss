@@ -392,11 +392,7 @@ p {
   
 }
 
-h1, 
-h2, 
-h3, 
-h4, 
-h5 {
+h1 {
   margin: 2.75rem 0 1rem;
   font-family: 'Dosis', sans-serif;
   font-weight: 800;
@@ -405,6 +401,13 @@ h5 {
 
 h1 {
   font-size: $h1;
+}
+
+h2, 
+h3, 
+h4, 
+h5 {
+  font-family: 'IBM Plex Mono', monospace;
 }
 
 h2 {
@@ -465,4 +468,34 @@ ul.primary-nav__list {
 .master-header {
   @extend %container;
   text-align: center;
+}
+
+// card
+.card {
+  background-color: #EFEFEF;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card__title {
+  margin: 0;
+  font-size: -david-type-scale-up($base, $scale, 3);
+  font-weight: 400;
+}
+
+// icons
+ul.icons {
+    padding-left: 0;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    margin-top: -david-type-scale-up($base, $scale, 2);
+}
+
+li.icons__item {
+    width: 15%;
+    margin-right: -david-type-scale-up($base, $scale, 1);
+    max-width: 100px;
 }
