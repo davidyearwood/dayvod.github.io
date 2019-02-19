@@ -464,10 +464,10 @@ main {
   flex-direction: row; }
 
 .hor-list__item {
-  margin-right: 1.95313em; }
+  margin-left: 1.95313em; }
 
 .hor-list__item:first-child {
-  margin-right: 0; }
+  margin-left: 0; }
 
 footer {
   border-top: 1px solid #000;

@@ -591,11 +591,11 @@ main {
 }
 
 .hor-list__item {
-  margin-right: -david-type-scale-up($base, $scale, 3);
+  margin-left: -david-type-scale-up($base, $scale, 3);
 }
 
 .hor-list__item:first-child {
-  margin-right: 0;
+  margin-left: 0;
 }
 
 // footer 
