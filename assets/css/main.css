@@ -361,7 +361,7 @@ ul.primary-nav__list {
   font-weight: 400;
   font-family: 'IBM Plex Mono', monospace; }
 
-.master-header, main {
+.master-header, main, footer {
   max-width: 750px;
   width: 100%;
   margin-left: auto;
@@ -445,5 +445,32 @@ main {
   .one-three-col {
     width: 35%;
     flex-grow: 1; } }
+.social-link {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.social-link__icon {
+  width: 100%;
+  max-width: 35px;
+  max-height: 35px;
+  fill: #efefef; }
+
+.hor-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: row; }
+
+.hor-list__item {
+  margin-right: 1.95313em; }
+
+.hor-list__item:first-child {
+  margin-right: 0; }
+
+footer {
+  border-top: 1px solid #000;
+  margin-top: 2.44141em; }
 
 /*# sourceMappingURL=main.css.map */
