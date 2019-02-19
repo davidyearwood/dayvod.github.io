@@ -370,7 +370,7 @@ template {
 
 $scale: 1.250;
 $base: 1em;
-$container-width: 750px;
+$container-width: 900px;
 
 $h1: -david-type-scale-up($base, $scale, 5);
 $h2: -david-type-scale-up($base, $scale, 4);
@@ -577,8 +577,8 @@ main {
 
 .social-link__icon {
   width: 100%;
-  max-width: 35px;
-  max-height: 35px;
+  max-width: 25px;
+  max-height: 25px;
   fill: #efefef;
 }
 
@@ -603,4 +603,6 @@ footer {
   @extend %container;
   border-top: 1px solid #000;
   margin-top: -david-type-scale-up($base, $scale, 4);
+  display: flex;
+  justify-content: flex-end;
 }
