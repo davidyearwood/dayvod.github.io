@@ -396,6 +396,9 @@ ul.primary-nav__list {
   font-size: 1.5625em;
   font-weight: 400; }
 
+.icon {
+  width: 100%; }
+
 ul.icons {
   padding-left: 0;
   list-style-type: none;
@@ -416,19 +419,31 @@ main {
 
 .two-three-col,
 .one-three-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: column;
   width: 100%; }
 
 @media (min-width: 750px) {
   main {
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  .row {
     flex-direction: row; }
 
   .card {
-    margin-right: 1.25em; }
+    margin-right: 0.8em; }
 
   .two-three-col {
     width: 65%; }
 
   .one-three-col {
-    width: 30%; } }
+    width: 35%;
+    flex-grow: 1; } }
 
 /*# sourceMappingURL=main.css.map */
