@@ -1,0 +1,32 @@
+.card {
+  background-color: $bg-color--card;
+  box-sizing: border-box;
+  color: #fff;
+  padding: 2.441em;
+}
+
+.card__text {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.50;
+  margin-top: 1.25rem;
+  font-size: 1rem;
+}
+
+.card__title {
+  font-family: $font-stack--sans;
+  font-size: 1.953rem; 
+}
+
+.horizontal-list {
+  display: inline-block;
+  padding-left: 0;
+}
+
+.horizontal-list__item {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.icon--small {
+  width: 2.441rem ;
+}

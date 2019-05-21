@@ -305,25 +305,21 @@ template {
   display: none; }
 
 html {
-  font-size: 100% }
+  font-size: 18px; }
 
 body {
   background-color: white;
+  font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
   line-height: 1.45;
   color: #333; }
 
-
 p {
-  margin-bottom: 1.25em; 
-  font-size: 1em;
-  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
-  line-height: 1.5;
-}
+  margin-bottom: 1.25em; }
 
 h1 {
   margin: 2.75rem 0 1rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 800;
   line-height: 1.15; }
 
@@ -334,14 +330,13 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Rubik', sans-serif; 
-}
+  font-family: 'IBM Plex Mono', monospace; }
 
 h2 {
   font-size: 2.44141em; }
 
 h3 {
-  font-size: 1.5625em; }
+  font-size: 1.95313em; }
 
 h4 {
   font-size: 1.5625em; }
@@ -352,76 +347,159 @@ h5 {
 small, .text_small {
   font-size: 0.8em; }
 
-li {
-  font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
-  font-size: 1.25rem;
-}
-
-.site-page--bg-color {
-  background-color: #F2EEEB;
-}
-
-.site-page {
-  max-width: 60rem;
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
-}
-
-.site-title {
-  color: #2176FF;
-  font-size: 4.768rem;
-}
-
-.site-title__sub {
-  color: #EA3A3A;
-  display: block;
-  font-size: 1.5625rem;
-}
-
-.primary-nav__list {
+ul.primary-nav__list {
   list-style-type: none;
-  padding-left: 0;
-}
+  padding-left: 0; }
 
 .primary-nav__list-item {
   display: inline-block;
-}
+  margin-right: 0.8em; }
 
-.primary-nav__link {
-  border: 2px dashed transparent;
-  padding: .512em;
+.site-title__sub {
   display: block;
-  color: #2176FF;
-  text-decoration: underline;
-  text-decoration-color: #2176FF;
-}
+  font-size: 0.32768em;
+  font-weight: 400;
+  font-family: 'IBM Plex Mono', monospace; }
 
-.primary-nav__link:hover,
-.primary-nav__link:focus {
-  border: 2px dashed #EA3A3A;
-  text-decoration-color: #EA3A3A;
-  color: #EA3A3A;
-}
-.primary-nav__link:focus {
-  outline: 0;
-}
+.master-header, main, footer {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  box-sizing: border-box; }
 
-.grid {
+.master-header {
+  text-align: center; }
+
+.card--link {
+  text-decoration: none;
+  color: inherit; }
+
+.card--link:hover > .card {
+  background-color: #facd23; }
+
+.card--link.bg-red:hover > .card {
+  background-color: #f89b89; }
+
+.card {
+  display: block;
+  text-decoration: none;
+  background-color: #EFEFEF;
+  padding: 1rem;
+  box-sizing: border-box;
+  margin-bottom: 1.25em;
+  transition: all 0.25s; }
+
+.card__title {
+  margin: 0;
+  font-size: 1.5625em;
+  font-weight: 400; }
+
+.icon {
+  width: 100%; }
+
+ul.icons {
+  padding-left: 0;
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  margin-top: 1.5625em; }
+
+li.icons__item {
+  width: 15%;
+  margin-right: 1.25em;
+  max-width: 75px; }
+
+main {
+  display: flex;
+  flex-direction: column; }
+
+.two-three-col,
+.one-three-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+
+@media (min-width: 900px) {
+  main {
+    flex-direction: row;
+    flex-wrap: wrap; }
+
+  .row {
+    flex-direction: row; }
+
+  .card {
+    margin-right: 0.8em; }
+
+  .two-three-col {
+    width: 65%; }
+
+  .one-three-col {
+    width: 35%;
+    flex-grow: 1; } }
+.social-link {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.social-link__icon {
+  width: 100%;
+  max-width: 25px;
+  max-height: 25px;
+  fill: #efefef; }
+
+.hor-list {
   list-style-type: none;
   padding-left: 0;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-}
+  flex-direction: row; }
 
-.grid__item {
-  box-sizing: border-box;
-  flex-basis: auto;
-  width: 48%;
+.hor-list__item {
+  margin-left: 1.95313em; }
+
+.hor-list__item:first-child {
+  margin-left: 0; }
+
+footer {
+  border-top: 1px solid #000;
+  margin-top: 2.44141em;
+  display: flex;
+  justify-content: flex-end; }
+
+.card {
   background-color: #EA3A3A;
-  margin-bottom: 2rem;
+  box-sizing: border-box;
   color: #fff;
-  padding: 1em 2.441em;
-}
+  padding: 2.441em; }
+
+.card__text {
+  font-family: 'Space Mono', monospace;
+  line-height: 1.50;
+  margin-top: 1.25rem;
+  font-size: 1rem; }
+
+.card__title {
+  font-family: "Rubik";
+  font-size: 1.953rem; }
+
+.horizontal-list {
+  display: inline-block;
+  padding-left: 0; }
+
+.horizontal-list__item {
+  display: inline-block;
+  margin-right: 1rem; }
+
+.icon--small {
+  width: 2.441rem; }
+
+/*# sourceMappingURL=main.css.map */

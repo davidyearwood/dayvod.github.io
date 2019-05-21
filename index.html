@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Rubik:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
 </head>
 
 <body class="site-page--bg-color">
@@ -38,11 +40,24 @@
             </section>
             <section>
                 <h2>Projects</h2>
-                <ul class="grid">
-                    <li class="grid__item">
-                        <h3>Calendar Application (Google Calendar Clone)</h3>
-                        <p>Technology stack used: CSS, React, Redux </p>
-                        <p>I created a calendar application using React and Redux to better understand both of these tools.</p>
+                <ul class="grid" style="padding-left: 0;">
+                    <li class="card grid__item">
+                        <h3 class="card__title">Calendar Application (Google Calendar Clone)</h3>
+                        <div>
+                            <p>Technology stack used:</p>
+                            <ul class="horizontal-list">
+                                <li class="horizontal-list__item"><img src="assets/imgs/css-icon.svg" alt="CSS" class="icon--small"></li>
+                                <li class="horizontal-list__item"><img src="assets/imgs/react-icon.svg" alt="React" class="icon--small"></li>
+                                <li class="horizontal-list__item"><img src="assets/imgs/redux-icon.svg" alt="Redux" class="icon--small"></li>
+                            </ul>
+                        </div>
+                        <p class="card__text">
+                            I stumbled on this coding challenge when I was browsing on r/front_end. The expected completion time was 1.5 hours, which
+                            I felt, and still do, was unreasonable. This was a great challenge to learn a lot about React
+                            and Redux, and helped me with structuring my React code a little better than what I was initially
+                            doing. I spend a lot of time on this app, and ignored the 1.5 hours because I really wanted to
+                            learn/understand how Redux works with React in a more practical sense.
+                        </p>
                         <a href="https://github.com/dayvod/calendar-app">View on github</a>
                     </li>
                     <li class="grid__item">
