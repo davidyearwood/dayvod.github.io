@@ -360,7 +360,6 @@ ul.primary-nav__list {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem;
   box-sizing: border-box; }
 
 .card--link {
@@ -551,7 +550,7 @@ footer {
 .master-header__title {
   font-size: 3.815rem;
   text-shadow: 0 4px rgba(0, 0, 0, 0.25);
-  color: #FEE7FC; }
+  color: #ffffff; }
 
 .master-header__text {
   font-style: italic;
@@ -559,6 +558,13 @@ footer {
   font-size: 1.25rem;
   display: block;
   text-shadow: none; }
+
+.bio__text {
+  font-weight: 300;
+  line-height: 160%;
+  font-size: 1.20rem;
+  color: #D7DCEA;
+  font-family: 'Work Sans'; }
 
 .mt-0 {
   margin-top: 0 !important; }
