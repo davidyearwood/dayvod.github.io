@@ -44,7 +44,7 @@ p {
 
 h1 {
   margin: 2.75rem 0 1rem;
-  font-family: 'Dosis', sans-serif;
+  font-family: $font-stack--sans;
   font-weight: 800;
   line-height: 1.15;
 }
@@ -96,14 +96,6 @@ ul.primary-nav__list {
   margin-right: -david-type-scale-down($base, $scale, 1);
 }
 
-// Site title
- 
-.site-title__sub {
-  display: block;
-  font-size: -david-type-scale-down($base, $scale, 5);
-  font-weight: 400;
-  font-family: 'IBM Plex Mono', monospace;
-}
 
 // container
 %container {
@@ -118,7 +110,6 @@ ul.primary-nav__list {
 // Master Header
 .master-header {
   @extend %container;
-  text-align: center;
 }
 
 // card
