@@ -370,7 +370,7 @@ template {
 
 $scale: 1.250;
 $base: 1em;
-$container-width: 900px;
+$container-width: 37.5rem;
 
 $h1: -david-type-scale-up($base, $scale, 5);
 $h2: -david-type-scale-up($base, $scale, 4);
@@ -381,11 +381,11 @@ $h5: -david-type-scale-up($base, $scale, 1);
 html {font-size: 18px;}
 
 body {
-  background-color: white;
+  background-color: #2E2E2E;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 400;
   line-height: 1.45;
-  color: #333;
+  color: #F2EEEB;
 }
 
 p {
