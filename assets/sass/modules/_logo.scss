@@ -1,0 +1,13 @@
+.logo {
+  font-weight: 700;
+  margin-right: auto;
+}
+
+.logo__link {
+  font-weight: 700;
+  font-size: $h3;
+  color: $color--title;
+  text-decoration: none;
+  /* color | offset-x | offset-y*/
+  text-shadow: 0 2px rgba(0, 0, 0, .25);
+}

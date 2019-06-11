@@ -1,6 +1,10 @@
 @import 'vendor/normalize.scss';
-@import 'base'; 
 @import 'variables';
+
+@import 'base'; 
+
+@import 'modules/logo';
+@import 'modules/nav';
 @import 'modules/card';
 @import 'modules/btn';
 @import 'util.scss';

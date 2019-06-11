@@ -1,0 +1,28 @@
+.navbar {
+  background-color: transparent;
+  display: flex;
+  width: 100%;
+}
+
+.navbar__list {
+  display: flex;
+  padding-left: 0;
+  list-style-type: none;
+  align-items: center;
+  width: 95%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar__list-item {
+  margin-left: 3.583rem;
+}
+
+.navbar__link {
+  color: #ffffff;
+  font-family: $font-stack--sans;
+  text-decoration-color: none;
+  text-decoration: none;
+  font-size: 0.9rem;
+}

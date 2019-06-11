@@ -30,8 +30,8 @@ $h5: -david-type-scale-up($base, $scale, 1);
 html {font-size: 18px;}
 
 body {
-  background-color: #2E2E2E;
-  font-family: 'IBM Plex Mono', monospace;
+  background-color: $bg-color--site;
+  font-family: $font-stack--sans;
   font-weight: 400;
   line-height: 1.45;
   color: #F2EEEB;
@@ -57,7 +57,7 @@ h2,
 h3, 
 h4, 
 h5 {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: $font-stack--sans;
 }
 
 h2 {
