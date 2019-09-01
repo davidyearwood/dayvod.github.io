@@ -1,13 +1,15 @@
 .master-header__title {
-  font-size: 3.815rem;
+  font-size: #{-get-asc-size($scale, 7)}rem;
   text-shadow: 0 4px rgba(0, 0, 0, .25);
-  color: #ffffff;
+  text-transform: uppercase;
+  color: $sail;
 }
 
 .master-header__text {
-  font-style: italic;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: $base;
   display: block;
   text-shadow: none;
+  color: #ffffff;
+  text-transform: none;
 }

@@ -1,3 +1,5 @@
+@import 'functions/sizes/get-sizes';
+
 $rhino: #32416A;
 $remy: #FEE7FC;
 $sail: #B2E2F5;
@@ -9,3 +11,22 @@ $bg-color--website: #F2EEEB;
 $bg-color--card: #e6dfcc;
 $bg-color--site: $rhino;
 $font-stack--sans: "Fira Sans", sans-serif;
+
+$scale: 1.250;
+$base: 1rem;
+$font-sizes: -get-asc-sizes($scale, 6);
+$small-font-sizes: -get-desc-sizes($scale, 6);
+
+$h1: #{nth($font-sizes, 6)}rem;
+$h2: #{nth($font-sizes, 5)}rem;
+$h3: #{nth($font-sizes, 4)}rem;
+$h4: #{nth($font-sizes, 3)}rem;
+$h5: #{nth($font-sizes, 2)}rem;
+
+$container-width: 37.5rem;
+$breakpoint-min: 25rem;
+$breakpoint-max: 37.5rem;
+$min-width: 375px;
+$max-width: $container-width;
+$min-font: 15px;
+$max-font: 18px;

@@ -2,32 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=Dosis:800|IBM+Plex+Mono:400');
 
-// $map: (key1: value1, key2: value2, key3: value3);
-@function -david-type-scale-up($base, $scale, $level) {
-    @for $currentLevel from $level through 1  {
-      $base: $base * $scale;
-    }
-  @return $base; 
+
+html {
+  @include fluid-type($min-font, $max-font, $min-width, $max-width);
 }
-
-@function -david-type-scale-down($base, $scale, $level) {
-    @for $currentLevel from $level through 1  {
-      $base: $base / $scale;
-    }
-  @return $base; 
-}
-
-$scale: 1.250;
-$base: 1em;
-$container-width: 37.5rem;
-
-$h1: -david-type-scale-up($base, $scale, 5);
-$h2: -david-type-scale-up($base, $scale, 4);
-$h3: -david-type-scale-up($base, $scale, 3);
-$h4: -david-type-scale-up($base, $scale, 2);
-$h5: -david-type-scale-up($base, $scale, 1);
-
-html {font-size: 18px;}
 
 body {
   background-color: $bg-color--site;
@@ -100,10 +78,9 @@ ul.primary-nav__list {
 // container
 %container {
   max-width: $container-width;
-  width: 100%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
-  // padding: 1rem;
   box-sizing: border-box;
 }
 

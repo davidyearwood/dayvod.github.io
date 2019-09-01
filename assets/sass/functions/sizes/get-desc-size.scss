@@ -1,0 +1,13 @@
+@function -get-desc-size($scale, $nth) {
+  $fontsize: 1;
+
+  @if $nth <= 1 {
+    @return 1;   
+  }
+
+  @for $i from 2 through $nth {
+    $fontsize: $fontsize / $scale;
+  }
+
+  @return $fontsize;
+}

@@ -1,0 +1,13 @@
+@function -get-asc-sizes($scale, $count) {
+  $fontsizes: [1]; 
+
+  @if $count <= 1 {
+    @return 1;   
+  }
+
+  @for $index from 2 through $count {
+    $fontsizes: append($fontsizes, (nth($fontsizes, $index - 1) * $scale));
+  }
+
+  @return $fontsizes;
+}
