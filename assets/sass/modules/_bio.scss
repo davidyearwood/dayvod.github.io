@@ -1,7 +1,7 @@
 .bio__text {
   font-weight: 300;
   line-height: 160%;
-  font-size: 1.20rem;
-  color: #D7DCEA;
-  font-family: 'Work Sans';
+  font-size: #{-get-asc-size($scale, 2)}rem;
+  color: #F1F3F8;
+  font-family: $font-stack--sans;
 }

@@ -5,6 +5,7 @@
   color: $color--primary;
   margin-bottom: #{-get-asc-size($scale, 2)}rem;
   line-height: 0.9;
+  margin-top: #{-get-asc-size($scale, 8)}rem;
 }
 
 .master-header__text {

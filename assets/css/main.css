@@ -311,6 +311,9 @@ body {
   line-height: 1.45;
   color: #F2EEEB; }
 
+a {
+  color: #fb97ac; }
+
 p {
   margin-bottom: 1.25em; }
 
@@ -475,16 +478,20 @@ footer {
   text-shadow: 0 2px rgba(0, 0, 0, 0.25); }
 
 .navbar {
+  position: absolute;
   display: flex;
   width: 100%;
-  margin-top: 0.262144rem; }
+  top: 1%;
+  right: 0; }
 
 .navbar__list {
   display: flex;
+  justify-content: flex-end;
   padding-left: 0;
   list-style-type: none;
   align-items: center;
-  margin: 0; }
+  margin: 0;
+  width: 95%; }
 
 .navbar__list-item {
   font-size: 1.25rem;
@@ -496,7 +503,7 @@ footer {
   border: 1px solid transparent;
   color: #ffffff;
   font-family: "Fira Sans", sans-serif;
-  text-decoration: underline;
+  text-decoration: none;
   font-size: inherit;
   font-weight: 400; }
 
@@ -558,7 +565,8 @@ footer {
   text-transform: capitalize;
   color: #97DEFB;
   margin-bottom: 1.25rem;
-  line-height: 0.9; }
+  line-height: 0.9;
+  margin-top: 4.768371582rem; }
 
 .master-header__text {
   font-weight: 400;
@@ -573,9 +581,9 @@ footer {
 .bio__text {
   font-weight: 300;
   line-height: 160%;
-  font-size: 1.20rem;
-  color: #D7DCEA;
-  font-family: 'Work Sans'; }
+  font-size: 1.25rem;
+  color: #F1F3F8;
+  font-family: "Fira Sans", sans-serif; }
 
 .mt-0 {
   margin-top: 0 !important; }
