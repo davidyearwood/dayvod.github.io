@@ -509,10 +509,10 @@ footer {
 
 .navbar__link:hover,
 .navbar__link:focus {
-  color: #B2E2F5; }
+  color: #fb97ac; }
 
 .navbar__link:focus {
-  border: 2px solid #B2E2F5;
+  border: 2px solid #fb97ac;
   outline: none; }
 
 .card {
