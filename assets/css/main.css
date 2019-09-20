@@ -516,20 +516,22 @@ footer {
   outline: none; }
 
 .card {
-  background-color: #e6dfcc;
+  background-color: #fff;
   box-sizing: border-box;
-  color: #000;
+  color: #32416A;
+  font-family: "Fira Sans", sans-serif;
   padding: 2.441em; }
 
 .card__text {
-  font-family: 'Noto Sans', monospace;
-  line-height: 1.65;
-  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.55;
+  font-size: 1.25rem;
   margin: 0; }
 
 .card__title {
-  font-family: "Space Mono";
-  font-size: 1.953rem; }
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.953125rem;
+  font-weight: 600; }
 
 .card__list > .card__text {
   margin-right: 1em; }
@@ -542,12 +544,9 @@ footer {
   display: inline-block;
   margin-right: 1rem; }
 
-.icon--small {
-  width: 2.441rem; }
-
 .btn {
-  color: #000000;
-  border: 4px solid black;
+  color: #32416A;
+  border: 4px solid #32416A;
   display: inline-block;
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
@@ -555,8 +554,9 @@ footer {
   text-decoration: none;
   transition: all 0.5s; }
 
-.btn:hover {
-  background-color: #2E2E2E;
+.btn:hover,
+.btn:focus {
+  background-color: #32416A;
   color: #fff;
   transform: translateX(0.41em); }
 

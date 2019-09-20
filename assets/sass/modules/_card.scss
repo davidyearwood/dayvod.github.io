@@ -1,20 +1,22 @@
 .card {
-  background-color: $bg-color--card;
+  background-color: #fff;
   box-sizing: border-box;
-  color: #000;
+  color: $rhino;
+  font-family: $font-stack--sans;
   padding: 2.441em;
 }
 
 .card__text {
-  font-family: 'Noto Sans', monospace;
-  line-height: 1.65;
-  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.55;
+  font-size: #{-get-asc-size($scale, 2)}rem;
   margin: 0;
 }
 
 .card__title {
-  font-family: "Space Mono";
-  font-size: 1.953rem; 
+  font-family: $font-stack--sans;
+  font-size: $h3;
+  font-weight: 600;
 }
 
 
@@ -29,8 +31,4 @@
 .horizontal-list__item {
   display: inline-block;
   margin-right: 1rem;
-}
-
-.icon--small {
-  width: 2.441rem ;
 }
