@@ -1,7 +1,7 @@
 .navbar {
-  background-color: transparent;
   display: flex;
   width: 100%;
+  margin-top: #{-get-desc-size($scale, 7)}rem;
 }
 
 .navbar__list {
@@ -9,20 +9,31 @@
   padding-left: 0;
   list-style-type: none;
   align-items: center;
-  width: 95%;
-  max-width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
 }
 
 .navbar__list-item {
-  margin-left: 3.583rem;
+  font-size: 1.25rem;
+  margin-right: #{-get-asc-size($scale, 3)}rem;
 }
 
 .navbar__link {
+  display: block;
+  padding: 1px;
+  border: 1px solid transparent;
   color: #ffffff;
   font-family: $font-stack--sans;
-  text-decoration-color: none;
-  text-decoration: none;
-  font-size: 0.9rem;
+  text-decoration: underline;
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.navbar__link:hover,
+.navbar__link:focus {
+  color: $color--hyperlink;
+}
+
+.navbar__link:focus {
+  border: 2px solid $color--hyperlink;
+  outline: none;
 }
