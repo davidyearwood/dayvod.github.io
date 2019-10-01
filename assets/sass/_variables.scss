@@ -3,15 +3,20 @@
 $rhino: #32416A;
 $remy: #FEE7FC;
 $sail: #B2E2F5;
+$french-pass: #B6E9FC;
 $sweet-pink: #fb97ac;
+$witch-haze: #FDFD96;
+$botticelli: #DADEEC;
 
-$color--primary: #97DEFB;
+$color--primary: $french-pass;
+$color--secondary: $rhino;
 $color--title: $remy; 
-$color--hyperlink: $sweet-pink;
+$color--hyperlink: #FDFD63;
 
 $bg-color--website: #F2EEEB;
-$bg-color--card: #e6dfcc;
+$bg-color--card: #B6E9FC;
 $bg-color--site: $rhino;
+
 $font-stack--sans: "Fira Sans", sans-serif;
 
 $scale: 1.250;

@@ -1,13 +1,13 @@
 .card {
-  background-color: #fff;
+  background-color: $bg-color--card;
   box-sizing: border-box;
-  color: $rhino;
+  color: $color--secondary;
   font-family: $font-stack--sans;
   padding: 2.441em;
 }
 
 .card__text {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.55;
   font-size: #{-get-asc-size($scale, 2)}rem;
   margin: 0;

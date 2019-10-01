@@ -312,7 +312,7 @@ body {
   color: #F2EEEB; }
 
 a {
-  color: #fb97ac; }
+  color: #FDFD63; }
 
 p {
   margin-bottom: 1.25em; }
@@ -324,7 +324,7 @@ h1 {
   line-height: 1.15; }
 
 h1 {
-  font-size: 3.0517578125rem; }
+  font-size: 3.05176rem; }
 
 h2,
 h3,
@@ -333,10 +333,10 @@ h5 {
   font-family: "Fira Sans", sans-serif; }
 
 h2 {
-  font-size: 2.44140625rem; }
+  font-size: 2.44141rem; }
 
 h3 {
-  font-size: 1.953125rem; }
+  font-size: 1.95313rem; }
 
 h4 {
   font-size: 1.5625rem; }
@@ -471,7 +471,7 @@ footer {
 
 .logo__link {
   font-weight: 700;
-  font-size: 1.953125rem;
+  font-size: 1.95313rem;
   color: #FEE7FC;
   text-decoration: none;
   /* color | offset-x | offset-y*/
@@ -509,28 +509,28 @@ footer {
 
 .navbar__link:hover,
 .navbar__link:focus {
-  color: #fb97ac; }
+  color: #FDFD63; }
 
 .navbar__link:focus {
-  border: 2px solid #fb97ac;
+  border: 2px solid #FDFD63;
   outline: none; }
 
 .card {
-  background-color: #fff;
+  background-color: #B6E9FC;
   box-sizing: border-box;
   color: #32416A;
   font-family: "Fira Sans", sans-serif;
   padding: 2.441em; }
 
 .card__text {
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.55;
   font-size: 1.25rem;
   margin: 0; }
 
 .card__title {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.953125rem;
+  font-size: 1.95313rem;
   font-weight: 600; }
 
 .card__list > .card__text {
@@ -561,12 +561,12 @@ footer {
   transform: translateX(0.41em); }
 
 .master-header__title {
-  font-size: 4.768371582rem;
+  font-size: 4.76837rem;
   text-transform: capitalize;
-  color: #97DEFB;
+  color: #B6E9FC;
   margin-bottom: 1.25rem;
   line-height: 0.9;
-  margin-top: 4.768371582rem; }
+  margin-top: 4.76837rem; }
 
 .master-header__text {
   font-weight: 400;

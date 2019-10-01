@@ -1,5 +1,5 @@
 @function -get-asc-sizes($scale, $count) {
-  $fontsizes: [1]; 
+  $fontsizes: (1); 
 
   @if $count <= 1 {
     @return 1;   
