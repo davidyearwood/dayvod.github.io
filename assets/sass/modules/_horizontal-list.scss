@@ -1,0 +1,11 @@
+.horizontal-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.horizontal-list__item {
+  font-size: #{-get-asc-size($scale, 1)}rem;
+}
+

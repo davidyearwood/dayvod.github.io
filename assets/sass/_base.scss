@@ -203,28 +203,3 @@ main {
   max-height: 25px;
   fill: #efefef;
 }
-
-// Horizontal list
-.hor-list {
-  list-style-type: none;
-  padding-left: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.hor-list__item {
-  margin-left: -david-type-scale-up($base, $scale, 3);
-}
-
-.hor-list__item:first-child {
-  margin-left: 0;
-}
-
-// footer 
-footer {
-  @extend %container;
-  border-top: 1px solid #000;
-  margin-top: -david-type-scale-up($base, $scale, 4);
-  display: flex;
-  justify-content: flex-end;
-}

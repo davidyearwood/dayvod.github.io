@@ -5,10 +5,12 @@
 
 @import 'base'; 
 
+@import 'modules/horizontal-list';
 @import 'modules/logo';
 @import 'modules/nav';
 @import 'modules/card';
 @import 'modules/btn';
 @import 'modules/master-header';
 @import 'modules/bio';
+@import 'modules/footer';
 @import 'util.scss';
