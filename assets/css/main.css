@@ -324,7 +324,8 @@ h1 {
   line-height: 1.15; }
 
 h1 {
-  font-size: 3.05176rem; }
+  font-size: 2.48832rem;
+  letter-spacing: 1px; }
 
 h2,
 h3,
@@ -333,19 +334,21 @@ h5 {
   font-family: "Fira Sans", sans-serif; }
 
 h2 {
-  font-size: 2.44141rem; }
+  letter-spacing: 1px;
+  font-size: 2.48832rem;
+  font-weight: 900; }
 
 h3 {
-  font-size: 1.95313rem; }
+  font-size: 1.728rem; }
 
 h4 {
-  font-size: 1.5625rem; }
+  font-size: 1.44rem; }
 
 h5 {
-  font-size: 1.25rem; }
+  font-size: 1.2rem; }
 
 small, .text_small {
-  font-size: -david-type-scale-down(1rem, 1.25, 1); }
+  font-size: -david-type-scale-down(1rem, 1.2, 1); }
 
 ul.primary-nav__list {
   list-style-type: none;
@@ -353,7 +356,7 @@ ul.primary-nav__list {
 
 .primary-nav__list-item {
   display: inline-block;
-  margin-right: -david-type-scale-down(1rem, 1.25, 1); }
+  margin-right: -david-type-scale-down(1rem, 1.2, 1); }
 
 .master-header, main, footer {
   max-width: 37.5rem;
@@ -378,12 +381,12 @@ ul.primary-nav__list {
   background-color: #EFEFEF;
   padding: 1rem;
   box-sizing: border-box;
-  margin-bottom: -david-type-scale-up(1rem, 1.25, 1);
+  margin-bottom: -david-type-scale-up(1rem, 1.2, 1);
   transition: all 0.25s; }
 
 .card__title {
   margin: 0;
-  font-size: -david-type-scale-up(1rem, 1.25, 2);
+  font-size: -david-type-scale-up(1rem, 1.2, 2);
   font-weight: 400; }
 
 .icon {
@@ -396,11 +399,11 @@ ul.icons {
   width: 100%;
   justify-content: start;
   align-items: center;
-  margin-top: -david-type-scale-up(1rem, 1.25, 2); }
+  margin-top: -david-type-scale-up(1rem, 1.2, 2); }
 
 li.icons__item {
   width: 15%;
-  margin-right: -david-type-scale-up(1rem, 1.25, 1);
+  margin-right: -david-type-scale-up(1rem, 1.2, 1);
   max-width: 75px; }
 
 main {
@@ -427,7 +430,7 @@ main {
     flex-direction: row; }
 
   .card {
-    margin-right: -david-type-scale-down(1rem, 1.25, 1); }
+    margin-right: -david-type-scale-down(1rem, 1.2, 1); }
 
   .two-three-col {
     width: 65%; }
@@ -454,14 +457,14 @@ main {
   flex-direction: row; }
 
 .hor-list__item {
-  margin-left: -david-type-scale-up(1rem, 1.25, 3); }
+  margin-left: -david-type-scale-up(1rem, 1.2, 3); }
 
 .hor-list__item:first-child {
   margin-left: 0; }
 
 footer {
   border-top: 1px solid #000;
-  margin-top: -david-type-scale-up(1rem, 1.25, 4);
+  margin-top: -david-type-scale-up(1rem, 1.2, 4);
   display: flex;
   justify-content: flex-end; }
 
@@ -471,7 +474,7 @@ footer {
 
 .logo__link {
   font-weight: 700;
-  font-size: 1.95313rem;
+  font-size: 1.728rem;
   color: #FEE7FC;
   text-decoration: none;
   /* color | offset-x | offset-y*/
@@ -494,8 +497,8 @@ footer {
   width: 95%; }
 
 .navbar__list-item {
-  font-size: 1.25rem;
-  margin-right: 1.5625rem; }
+  font-size: 1.2rem;
+  margin-right: 1.44rem; }
 
 .navbar__link {
   display: block;
@@ -520,18 +523,21 @@ footer {
   box-sizing: border-box;
   color: #32416A;
   font-family: "Fira Sans", sans-serif;
-  padding: 2.441em; }
+  padding: 2.48832em; }
 
 .card__text {
   font-weight: 400;
   line-height: 1.55;
-  font-size: 1.25rem;
+  font-size: 1.44rem;
   margin: 0; }
+
+.card__text--sm {
+  font-size: 1.2rem; }
 
 .card__title {
   font-family: "Fira Sans", sans-serif;
-  font-size: 1.95313rem;
-  font-weight: 600; }
+  font-size: 1.728rem;
+  font-weight: 700; }
 
 .card__list > .card__text {
   margin-right: 1em; }
@@ -546,13 +552,14 @@ footer {
 
 .btn {
   color: #32416A;
-  border: 4px solid #32416A;
+  border: 3px dashed #32416A;
   display: inline-block;
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
-  padding: 1em;
+  padding: 0.69444em;
   text-decoration: none;
-  transition: all 0.5s; }
+  transition: all 0.5s;
+  border-radius: 5px; }
 
 .btn:hover,
 .btn:focus {
@@ -561,27 +568,28 @@ footer {
   transform: translateX(0.41em); }
 
 .master-header__title {
-  font-size: 4.76837rem;
+  font-size: 3.58318rem;
   text-transform: capitalize;
   color: #B6E9FC;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.2rem;
   line-height: 0.9;
-  margin-top: 4.76837rem; }
+  margin-top: 3.58318rem; }
 
 .master-header__text {
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   display: block;
   text-shadow: none;
   color: #ffffff;
   font-style: italic;
   text-transform: none;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 1.2rem;
+  letter-spacing: 0; }
 
 .bio__text {
   font-weight: 300;
   line-height: 160%;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #F1F3F8;
   font-family: "Fira Sans", sans-serif; }
 

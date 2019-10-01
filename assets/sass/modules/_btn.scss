@@ -1,12 +1,13 @@
 .btn {
   color: $rhino;
-  border: 4px solid $rhino;
+  border: 3px dashed $rhino;
   display: inline-block;
   font-family: $font-stack--sans;
   font-weight: 600;
-  padding: 1em;
+  padding: #{-get-desc-size($scale, 3)}em;
   text-decoration: none;
   transition: all 0.5s;
+  border-radius: 5px;
 }
 
 .btn:hover,

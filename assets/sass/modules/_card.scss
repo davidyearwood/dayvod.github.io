@@ -3,20 +3,24 @@
   box-sizing: border-box;
   color: $color--secondary;
   font-family: $font-stack--sans;
-  padding: 2.441em;
+  padding: #{-get-asc-size($scale, 6)}em;
 }
 
 .card__text {
   font-weight: 400;
   line-height: 1.55;
-  font-size: #{-get-asc-size($scale, 2)}rem;
+  font-size: #{-get-asc-size($scale, 3)}rem;
   margin: 0;
+}
+
+.card__text--sm {
+  font-size: #{-get-asc-size($scale, 2)}rem;
 }
 
 .card__title {
   font-family: $font-stack--sans;
   font-size: $h3;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
