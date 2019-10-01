@@ -1,9 +1,9 @@
 .card {
+  @extend .p-6;  
   background-color: $bg-color--card;
   box-sizing: border-box;
   color: $color--secondary;
   font-family: $font-stack--sans;
-  padding: #{-get-asc-size($scale, 6)}em;
 }
 
 .card__text {
@@ -21,9 +21,4 @@
   font-family: $font-stack--sans;
   font-size: $h3;
   font-weight: 700;
-}
-
-
-.card__list > .card__text {
-  margin-right: 1em;
 }
