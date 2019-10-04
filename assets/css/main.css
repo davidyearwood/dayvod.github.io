@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Dosis:800|IBM+Plex+Mono:400");
 html {
   line-height: 1.15;
   /* 1 */
@@ -304,34 +303,19 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  background-color: #32416A;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
-  line-height: 1.45;
-  color: #F2EEEB; }
-
-a {
-  color: #FDFD63; }
-
-p {
-  margin-bottom: 1.25em; }
-
-h1 {
-  margin: 2.75rem 0 1rem;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 800;
-  line-height: 1.15; }
-
-h1 {
-  font-size: 2.48832rem;
-  letter-spacing: 1px; }
-
+h1,
 h2,
 h3,
 h4,
 h5 {
   font-family: "Fira Sans", sans-serif; }
+
+h1 {
+  font-size: 2.48832rem;
+  letter-spacing: 1px;
+  margin: 2.75rem 0 1rem;
+  font-weight: 800;
+  line-height: 1.15; }
 
 h2 {
   letter-spacing: 1px;
@@ -347,16 +331,22 @@ h4 {
 h5 {
   font-size: 1.2rem; }
 
-small, .text_small {
-  font-size: -david-type-scale-down(1rem, 1.2, 1); }
+a {
+  color: #FDFD63; }
 
-ul.primary-nav__list {
-  list-style-type: none;
-  padding-left: 0; }
+p {
+  margin-bottom: 1.25em; }
 
-.primary-nav__list-item {
-  display: inline-block;
-  margin-right: -david-type-scale-down(1rem, 1.2, 1); }
+small,
+.text--small {
+  font-size: 1; }
+
+body {
+  background-color: #32416A;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #F2EEEB; }
 
 .master-header, main, footer > nav {
   max-width: 37.5rem;
@@ -365,90 +355,9 @@ ul.primary-nav__list {
   margin-right: auto;
   box-sizing: border-box; }
 
-.card--link {
-  text-decoration: none;
-  color: inherit; }
-
-.card--link:hover > .card {
-  background-color: #facd23; }
-
-.card--link.bg-red:hover > .card {
-  background-color: #f89b89; }
-
-.card {
-  display: block;
-  text-decoration: none;
-  background-color: #EFEFEF;
-  padding: 1rem;
-  box-sizing: border-box;
-  margin-bottom: -david-type-scale-up(1rem, 1.2, 1);
-  transition: all 0.25s; }
-
-.card__title {
-  margin: 0;
-  font-size: -david-type-scale-up(1rem, 1.2, 2);
-  font-weight: 400; }
-
-.icon {
-  width: 100%; }
-
-ul.icons {
-  padding-left: 0;
-  list-style-type: none;
-  display: flex;
-  width: 100%;
-  justify-content: start;
-  align-items: center;
-  margin-top: -david-type-scale-up(1rem, 1.2, 2); }
-
-li.icons__item {
-  width: 15%;
-  margin-right: -david-type-scale-up(1rem, 1.2, 1);
-  max-width: 75px; }
-
 main {
   display: flex;
   flex-direction: column; }
-
-.two-three-col,
-.one-three-col {
-  width: 100%;
-  display: flex;
-  flex-direction: column; }
-
-.row {
-  display: flex;
-  flex-direction: column;
-  width: 100%; }
-
-@media (min-width: 37.5rem) {
-  main {
-    flex-direction: row;
-    flex-wrap: wrap; }
-
-  .row {
-    flex-direction: row; }
-
-  .card {
-    margin-right: -david-type-scale-down(1rem, 1.2, 1); }
-
-  .two-three-col {
-    width: 65%; }
-
-  .one-three-col {
-    width: 35%;
-    flex-grow: 1; } }
-.social-link {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-
-.social-link__icon {
-  width: 100%;
-  max-width: 25px;
-  max-height: 25px;
-  fill: #efefef; }
 
 .horizontal-list {
   display: flex;
@@ -527,7 +436,8 @@ main {
 .card__title {
   font-family: "Fira Sans", sans-serif;
   font-size: 1.728rem;
-  font-weight: 700; }
+  font-weight: 700;
+  margin: 0; }
 
 .btn {
   color: #32416A;

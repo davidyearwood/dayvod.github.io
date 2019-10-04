@@ -1,0 +1,48 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $font-stack--sans;
+}
+
+
+h1 {
+  font-size: $h1;
+  letter-spacing: 1px;
+  margin: 2.75rem 0 1rem;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+h2 {
+  letter-spacing: 1px;
+  font-size: $h1;
+  font-weight: 900;
+}
+
+
+h3 {
+  font-size: $h3;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+h5 {
+  font-size: $h5;
+}
+
+a {
+  color: $color--hyperlink;
+}
+
+p {
+  margin-bottom: 1.25em;
+}
+
+small,
+.text--small {
+  font-size: -get-desc-size($scale, 1);
+}
