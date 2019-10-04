@@ -608,18 +608,6 @@ main {
 .horizontal-list__item {
   font-size: 1rem; }
 
-.logo {
-  font-weight: 700;
-  margin-right: auto; }
-
-.logo__link {
-  font-weight: 700;
-  font-size: 1.728rem;
-  color: #FEE7FC;
-  text-decoration: none;
-  /* color | offset-x | offset-y*/
-  text-shadow: 0 2px rgba(0, 0, 0, 0.25); }
-
 .navbar {
   position: absolute;
   display: flex;
