@@ -29,7 +29,7 @@
   font-family: $font-stack--sans;
   text-decoration: none;
   font-size: inherit;
-  font-weight: 400;
+  font-weight: $font-weight--normal;
 }
 
 .navbar__link:hover,

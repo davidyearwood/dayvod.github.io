@@ -3,7 +3,7 @@
   border: 3px dashed $rhino;
   display: inline-block;
   font-family: $font-stack--sans;
-  font-weight: 600;
+  font-weight: $font-weight--semibold;
   padding: #{-get-desc-size($scale, 3)}em;
   text-decoration: none;
   transition: all 0.5s;

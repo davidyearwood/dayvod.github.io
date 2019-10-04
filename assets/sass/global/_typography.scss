@@ -11,14 +11,14 @@ h1 {
   font-size: $h1;
   letter-spacing: 1px;
   margin: 2.75rem 0 1rem;
-  font-weight: 800;
+  font-weight: $font-weight--black;
   line-height: 1.15;
 }
 
 h2 {
   letter-spacing: 1px;
   font-size: $h1;
-  font-weight: 900;
+  font-weight: $font-weight--black;
 }
 
 

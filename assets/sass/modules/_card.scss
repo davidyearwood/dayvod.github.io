@@ -7,7 +7,7 @@
 }
 
 .card__text {
-  font-weight: 400;
+  font-weight: $font-weight--normal;
   line-height: 1.55;
   font-size: #{-get-asc-size($scale, 3)}rem;
   margin: 0;
@@ -20,6 +20,6 @@
 .card__title {
   font-family: $font-stack--sans;
   font-size: $h3;
-  font-weight: 700;
+  font-weight: $font-weight--bold;
   margin: 0;
 }

@@ -1,5 +1,5 @@
 .bio__text {
-  font-weight: 300;
+  font-weight: $font-weight--thin;
   line-height: 160%;
   font-size: #{-get-asc-size($scale, 2)}rem;
   color: #F1F3F8;

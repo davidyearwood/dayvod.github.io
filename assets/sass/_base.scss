@@ -7,7 +7,7 @@ html {
 body {
   background-color: $bg-color--site;
   font-family: $font-stack--sans;
-  font-weight: 400;
+  font-weight: $font-weight--normal;
   line-height: 1.45;
   color: #F2EEEB;
 }
