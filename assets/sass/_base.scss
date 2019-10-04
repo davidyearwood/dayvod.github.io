@@ -1,3 +1,5 @@
+@import 'util/placeholders/container';
+
 html {
   @include fluid-type($min-font, $max-font, $min-width, $max-width);
 }
@@ -8,15 +10,6 @@ body {
   font-weight: 400;
   line-height: 1.45;
   color: #F2EEEB;
-}
-
-// container
-%container {
-  max-width: $container-width;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
 }
 
 // Master Header
